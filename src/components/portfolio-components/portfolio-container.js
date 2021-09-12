@@ -16,6 +16,8 @@ export default class PortfolioContainer extends Component {
     this.handleFilter = this.handleFilter.bind(this);
   }
 
+
+  
   handleFilter(filter) {
     if (filter === "CLEAR_FILTERS") {
       this.getPortfolioItems();
