@@ -1,7 +1,14 @@
-import { combineReducers } from 'redux';
+import {
+  faTrash,
+  faSignOutAlt,
+  faEdit,
+  faSpinner,
+  faPlusCircle
+} from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-const rootReducer = combineReducers({
-  state: (state = {}) => state
-});
+const Icons = () => {
+  return library.add(faTrash, faSignOutAlt, faEdit, faSpinner, faPlusCircle);
+};
 
-export default rootReducer;
+export default Icons;
